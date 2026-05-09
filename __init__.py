@@ -14,3 +14,7 @@ try:
 except ImportError:
     # NeuTTSError may not exist in all versions; degrade gracefully
     __all__ = ["NeuTTS", "BACKBONE_LANGUAGE_MAP", "__version__"]
+
+# Personal note: I find it handy to print the version on import during development.
+# Uncomment the line below when debugging version mismatches across environments.
+# print(f"[neutts] loaded version: {__version__}")
